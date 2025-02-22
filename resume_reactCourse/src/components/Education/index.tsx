@@ -1,24 +1,26 @@
 import Styles from "./education.module.css";
 
-export default function Education() {
+interface EducationProps {
+  data: {
+    title: string;
+    items: { institution: string; degree: string; date: string }[];
+  };
+}
+
+export default function Education({ data }: EducationProps) {
   return (
     <section className={Styles.educationContainer} id="education">
-      <h2>education</h2>
+      <h2>{data.title}</h2>
       <ul className={Styles.educationList}>
-        <li className={Styles.educationElement}>
-          <div>
-            <b>Russian Technological University MIREA</b>
-            <br></br> Bachelors in Applied Computer Science <br></br>
-          </div>
-          <i className={Styles.date}>2022 sep. - 2026 jul.</i>
-        </li>
-        <li className={Styles.educationElement}>
+        {data.items.map((edu, index) => (
+          <li key={index} className={Styles.educationElement}>
             <div>
-            <b>Beijing Institute of Technology</b>
-            <br></br> Exchange semester, Computer Science <br></br>
+              <b>{edu.institution}</b>
+              <br /> {edu.degree} <br />
             </div>
-          <i>2024 feb. - 2024 jul.</i>
-        </li>
+            <i className={Styles.date}>{edu.date}</i>
+          </li>
+        ))}
       </ul>
     </section>
   );

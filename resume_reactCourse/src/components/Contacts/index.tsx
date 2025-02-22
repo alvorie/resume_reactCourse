@@ -1,13 +1,16 @@
-import Styles from './contacts.module.css';
+import Styles from "./contacts.module.css";
+import { contactsData } from "../../data";
 
-export function Contacts({}) {
-  return <ul className={Styles.contactList} id='contacts'>
-        <li className={Styles.contactElement}>
-          <a className={Styles.contactLink}>aleena.volf@mail.ru</a>
+export function Contacts() {
+  return (
+    <ul className={Styles.contactList}>
+      {contactsData.map((contact, index) => (
+        <li key={index} className={Styles.contactElement}>
+          <a className={Styles.contactLink} href={contact.link}>
+            {contact.label}
+          </a>
         </li>
-        <li className={Styles.contactElement}>
-          <a className={Styles.contactLink}>alvorie</a>
-        </li>
-      </ul>;
+      ))}
+    </ul>
+  );
 }
-  
