@@ -1,35 +1,86 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Navigation from "./components/Navigation";
+import AppWrapper from "./containers/AppWrapper";
+import Header from "./components/Header";
+import About from "./components/About";
+import Profile from "./components/Profile";
+import MainContainer from "./containers/MainContainer";
+import Education from "./components/Education";
+import InfoContainer from "./containers/InfoContainer";
+import Work from "./components/Work";
+import Skills from "./components/Skills";
+import { Skill } from "./components/Skill";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const navElements = [
+    "about",
+    "education",
+    "work experience",
+    "skills",
+    "projects"
+  ];
+
+  const skills: Skill[] = [
+    {
+      skillGroup: "frontend",
+      skillName: "JavaScript"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "CSS"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "SASS"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "CSS Modules"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "HTML"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "TypeScript"
+    },
+    {
+      skillGroup: "frontend",
+      skillName: "React"
+    },
+    {
+      skillGroup: "misc",
+      skillName: "Figma"
+    },
+    {
+      skillGroup: "misc",
+      skillName: "English C1"
+    },
+  ]
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <AppWrapper>
+      <Header>
+        <Navigation navElements={navElements}></Navigation>
+      </Header>
+      <main>
+        <MainContainer>
+          <aside>
+            <Profile></Profile>
+          </aside>
+          <InfoContainer>
+          <About></About>
+          <Education></Education>
+          <Work></Work>
+          <Skills skills={skills}></Skills>
+          </InfoContainer>
+        </MainContainer>
+      </main>
+    </AppWrapper>
+  );
 }
 
-export default App
+export default App;

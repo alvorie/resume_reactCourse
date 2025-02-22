@@ -1,0 +1,11 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}

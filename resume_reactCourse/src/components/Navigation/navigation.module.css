@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    font-size: 1.4rem;
+    list-style: none;
+    max-width: 1500px;
+}
+
+.navLink {
+    color: rgb(25, 24, 26);
+    padding: 0 20px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all ease-in 0.1s;
+}
+
+.navLink:before {
+    content: "→";
+    font-weight: 900;
+    padding-right: 5px;
+}

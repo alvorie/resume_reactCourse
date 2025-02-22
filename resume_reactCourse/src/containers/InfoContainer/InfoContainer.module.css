@@ -1,0 +1,8 @@
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 900px;
+    gap: 30px;
+    padding-left: 300px;
+}

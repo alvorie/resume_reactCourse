@@ -1,0 +1,17 @@
+.profileImg {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 330px;
+    /* border-radius: 3px;
+    border: solid #c4c2b6bb 1px;
+    padding: 10px;
+    background-color: #e5e4da; */
+}
