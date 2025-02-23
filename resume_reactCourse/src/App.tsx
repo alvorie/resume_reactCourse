@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navigation from "./components/Navigation";
 import AppWrapper from "./containers/AppWrapper";
 import Header from "./components/Header";
