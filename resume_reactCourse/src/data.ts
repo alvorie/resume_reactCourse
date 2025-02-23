@@ -3,7 +3,7 @@ import { Skill } from "./components/Skill";
 export const navElementsData = [
   "about",
   "education",
-  "work experience",
+  "experience",
   "skills",
   "projects",
 ];
@@ -12,7 +12,7 @@ export const aboutData = {
   title: "⊹ about ⊹",
   description: `An aspiring frontend developer interested in UI/UX design and 
     fullstack development. Dedicated to creating functional and 
-    user-friendly experiences. 
+    user-friendly experiences.
     Also, a proud cat enthusiast.`,
 };
 
@@ -57,6 +57,12 @@ export const projectsData = {
         technologies: "Vanilla JS, CSS, HTML",
         demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html",
       },
+      {
+        name: "Audio player",
+        imgPath: "assets/img/audio-player.png",
+        technologies: "Vanilla JS, CSS, HTML",
+        demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html",
+      },
     ],
   };
 
@@ -71,7 +77,7 @@ export const skillsData: Skill[] = [
   },
   {
     skillGroup: "frontend",
-    skillName: "SASS",
+    skillName: "Sass",
   },
   {
     skillGroup: "frontend",
@@ -88,6 +94,10 @@ export const skillsData: Skill[] = [
   {
     skillGroup: "frontend",
     skillName: "React",
+  },
+  {
+    skillGroup: "misc", // lol
+    skillName: "Python",
   },
   {
     skillGroup: "misc",

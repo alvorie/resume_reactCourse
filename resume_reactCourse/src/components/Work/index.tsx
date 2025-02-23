@@ -9,7 +9,7 @@ interface WorkProps {
 
 export default function Work({ data }: WorkProps) {
   return (
-    <section id="work experience" className={Styles.workContainer}>
+    <section id="experience" className={Styles.workContainer}>
       <h2>{data.title}</h2>
       <ul className={Styles.workList}>
         {data.items.map((job, index) => (

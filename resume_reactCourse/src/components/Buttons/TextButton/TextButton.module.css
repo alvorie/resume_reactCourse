@@ -1,0 +1,23 @@
+.textButton {
+    font-size: 1.6rem;
+    transition: 0.1s ease-in;
+    text-decoration: none;
+}
+
+.textButton::after {
+    content: '→';
+    padding-left: 2px;
+    transition: 0.1s ease-in;
+}
+
+.textButton:hover::after {
+    padding-left: 5px;
+}
+
+.textButton:visited {
+    color: inherit;
+}
+
+.textButton:hover::before {
+    transform:rotate(45deg);
+}

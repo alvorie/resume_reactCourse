@@ -9,7 +9,15 @@ import Education from "./components/Education";
 import InfoContainer from "./containers/InfoContainer";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
-import { aboutData, educationData, navElementsData, skillsData, workData } from "./data";
+import {
+  aboutData,
+  educationData,
+  navElementsData,
+  projectsData,
+  skillsData,
+  workData,
+} from "./data";
+import Projects from "./components/Projects";
 
 function App() {
   console.log("ฅ^•ﻌ•^ฅ hi there!");
@@ -25,10 +33,11 @@ function App() {
             <Profile></Profile>
           </aside>
           <InfoContainer>
-          <About data={aboutData}></About>
-          <Education data={educationData}></Education>
-          <Work data={workData}></Work>
-          <Skills skills={skillsData}></Skills>
+            <About data={aboutData}></About>
+            <Education data={educationData}></Education>
+            <Work data={workData}></Work>
+            <Skills skills={skillsData}></Skills>
+            <Projects data={projectsData}></Projects>
           </InfoContainer>
         </MainContainer>
       </main>
