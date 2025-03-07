@@ -61,7 +61,7 @@ export const projectsData = {
         name: "Audio player",
         imgPath: "assets/img/audio-player.png",
         technologies: "Vanilla JS, CSS, HTML",
-        demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html",
+        demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFEPRESCHOOL2024Q2/audio-player/",
       },
     ],
   };
