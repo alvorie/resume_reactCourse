@@ -49,22 +49,31 @@ export const workData = {
 };
 
 export const projectsData = {
-    title: "projects",
-    items: [
-      {
-        name: "Nonograms",
-        imgPath: "assets/img/nonograms.png",
-        technologies: "Vanilla JS, CSS, HTML",
-        demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html",
-      },
-      {
-        name: "Audio player",
-        imgPath: "assets/img/audio-player.png",
-        technologies: "Vanilla JS, CSS, HTML",
-        demoLink: "https://rolling-scopes-school.github.io/alvorie-JSFEPRESCHOOL2024Q2/audio-player/",
-      },
-    ],
-  };
+  title: "projects",
+  items: [
+    {
+      name: "Nonograms",
+      imgPath: "assets/img/nonograms.png",
+      technologies: "JavaScript, CSS, HTML",
+      demoLink:
+        "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html",
+    },
+    {
+      name: "Audio player",
+      imgPath: "assets/img/audio-player.png",
+      technologies: "JavaScript, CSS, HTML",
+      demoLink:
+        "https://rolling-scopes-school.github.io/alvorie-JSFEPRESCHOOL2024Q2/audio-player/",
+    },
+    {
+      name: "Decision picker",
+      imgPath: "assets/img/decision-picker.png",
+      technologies: "TypeScript, Sass, CSS, HTML",
+      demoLink:
+        "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/decision-making-tool/",
+    },
+  ],
+};
 
 export const skillsData: Skill[] = [
   {
