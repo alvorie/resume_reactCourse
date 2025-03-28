@@ -9,5 +9,5 @@ export default function LanguageToggle() {
     i18n.changeLanguage(newLang);
   };
 
-  return <Button onClick={toggleLang}>{i18n.language}</Button>;
+  return <Button onClick={toggleLang}>{i18n.language.split("-")[0]}</Button>;
 }
