@@ -1,0 +1,134 @@
+{
+    "navElements": [
+        {
+            "key": "about",
+            "text": "about"
+        },
+        {
+            "key": "education",
+            "text": "education"
+        },
+        {
+            "key": "experience",
+            "text": "experience"
+        },
+        {
+            "key": "skills",
+            "text": "skills"
+        },
+        {
+            "key": "projects",
+            "text": "projects"
+        }
+    ],
+    "profile": {
+        "name": "Alena Volf"
+    },
+    "about": {
+        "title": "⊹ about ⊹",
+        "description": "An aspiring frontend developer interested in UI/UX design and \nfullstack development. Dedicated to creating functional and \nuser-friendly experiences.\nAlso, a proud cat enthusiast."
+    },
+    "contacts": [
+        {
+            "label": "aleena.volf@mail.ru",
+            "link": "mailto:aleena.volf@mail.ru"
+        },
+        {
+            "label": "@alvorie",
+            "link": "https://t.me/alvorie"
+        }
+    ],
+    "education": {
+        "title": "education",
+        "items": [
+            {
+                "institution": "Russian Technological University MIREA",
+                "degree": "Bachelors in Applied Computer Science",
+                "date": "2022 sep. - 2026 jul."
+            },
+            {
+                "institution": "Beijing Institute of Technology",
+                "degree": "Exchange semester, Computer Science",
+                "date": "2024 feb. - 2024 jul."
+            }
+        ]
+    },
+    "work": {
+        "title": "work experience",
+        "items": [
+            {
+                "position": "Computer Science Student Adviser",
+                "company": "100points - Unified State Exam School",
+                "date": "2023 jan. - 2024 jan."
+            }
+        ]
+    },
+    "projects": {
+        "title": "projects",
+        "items": [
+            {
+                "name": "Nonograms",
+                "imgPath": "assets/img/nonograms.png",
+                "technologies": "JavaScript, CSS, HTML",
+                "demoLink": "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/nonograms/index.html"
+            },
+            {
+                "name": "Audio player",
+                "imgPath": "assets/img/audio-player.png",
+                "technologies": "JavaScript, CSS, HTML",
+                "demoLink": "https://rolling-scopes-school.github.io/alvorie-JSFEPRESCHOOL2024Q2/audio-player/"
+            },
+            {
+                "name": "Decision picker",
+                "imgPath": "assets/img/decision-picker.png",
+                "technologies": "TypeScript, Sass, CSS, HTML",
+                "demoLink": "https://rolling-scopes-school.github.io/alvorie-JSFE2024Q4/decision-making-tool/"
+            }
+        ]
+    },
+    "skills": {
+        "title": "skills",
+        "items": [
+            {
+                "skillGroup": "frontend",
+                "skillName": "JavaScript"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "CSS"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "Sass"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "CSS Modules"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "HTML"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "TypeScript"
+            },
+            {
+                "skillGroup": "frontend",
+                "skillName": "React"
+            },
+            {
+                "skillGroup": "misc",
+                "skillName": "Python"
+            },
+            {
+                "skillGroup": "misc",
+                "skillName": "Figma"
+            },
+            {
+                "skillGroup": "misc",
+                "skillName": "English C1"
+            }
+        ]
+    }
+}

@@ -1,13 +1,21 @@
+import { useTranslation } from "react-i18next";
 import Styles from "./contacts.module.css";
-import { contactsData } from "../../data";
+
+interface Contact {
+  link: string;
+  label: string;
+}
 
 export function Contacts() {
+  const { t } = useTranslation();
+  const contacts = t("contacts", { returnObjects: true }) as Contact[];
+
   return (
     <ul className={Styles.contactList}>
-      {contactsData.map((contact, index) => (
+      {contacts.map((item, index) => (
         <li key={index} className={Styles.contactElement}>
-          <a className={Styles.contactLink} href={contact.link}>
-            {contact.label}
+          <a className={Styles.contactLink} href={item.link}>
+            {item.label}
           </a>
         </li>
       ))}

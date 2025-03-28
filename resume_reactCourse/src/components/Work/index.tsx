@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
 import Styles from "./work.module.css";
 
-interface WorkProps {
-  data: {
-    title: string;
-    items: { position: string; company: string; date: string }[];
-  };
+interface Work {
+  title: string;
+  items: { position: string; company: string; date: string }[];
 }
 
-export default function Work({ data }: WorkProps) {
+export default function Work() {
+  const { t } = useTranslation();
+  const work = t("work", { returnObjects: true }) as Work;
+
   return (
     <section id="experience" className={Styles.workContainer}>
-      <h2>{data.title}</h2>
+      <h2>{work.title}</h2>
       <ul className={Styles.workList}>
-        {data.items.map((job, index) => (
+        {work.items.map((job, index) => (
           <li key={index} className={Styles.workElement}>
             <div>
               <b>{job.position}</b>

@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
 import Styles from "./education.module.css";
 
-interface EducationProps {
-  data: {
-    title: string;
-    items: { institution: string; degree: string; date: string }[];
-  };
+interface Education {
+  title: string;
+  items: { institution: string; degree: string; date: string }[];
 }
 
-export default function Education({ data }: EducationProps) {
+export default function Education() {
+  const { t } = useTranslation();
+  const education = t("education", { returnObjects: true }) as Education;
+
   return (
     <section className={Styles.educationContainer} id="education">
-      <h2>{data.title}</h2>
+      <h2>{education.title}</h2>
       <ul className={Styles.educationList}>
-        {data.items.map((edu, index) => (
+        {education.items.map((edu, index) => (
           <li key={index} className={Styles.educationElement}>
             <div>
               <b>{edu.institution}</b>
