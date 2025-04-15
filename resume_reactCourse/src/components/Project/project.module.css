@@ -1,34 +1,33 @@
 .projectWrapper {
-    background-color: #faf9f5e1;
-    padding: 15px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    transition: ease-in 0.1s;
+  background-color: #faf9f5e1;
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: ease-in 0.1s;
 }
 
 .projectWrapper:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .projectName {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .projectTechnologies {
-    color: #4c4a4a;
-    font-size: 1.4rem;
+  color: #4c4a4a;
+  font-size: 1.4rem;
 }
 
 .projectInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .img {
-    background-color: #fff;
-    height: 25vh;
-    object-fit: cover;
+  background-color: #fff;
+  object-fit: cover;
 }

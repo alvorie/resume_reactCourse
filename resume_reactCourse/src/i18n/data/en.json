@@ -67,6 +67,12 @@
         "title": "projects",
         "items": [
             {
+                "name": "Coffee website",
+                "imgPath": "assets/img/coffee-website.png",
+                "technologies": "React, React Router, Zod, TypeScript, CSS, HTML",
+                "demoLink": "https://coffee-website-jet-pi.vercel.app/"
+            },
+            {
                 "name": "Nonograms",
                 "imgPath": "assets/img/nonograms.png",
                 "technologies": "JavaScript, CSS, HTML",
